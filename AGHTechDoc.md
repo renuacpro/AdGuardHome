@@ -436,7 +436,7 @@ Option with arbitrary hexadecimal data:
 
 	DEC_CODE hex HEX_DATA
 
-where DEC_CODE is a decimal DHCPv4 code in range [1..255]
+where DEC_CODE is a decimal DHCPv4 option code in range [1..255]
 
 Option with IP data (only 1 IP is supported):
 

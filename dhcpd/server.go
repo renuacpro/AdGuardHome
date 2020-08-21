@@ -50,6 +50,14 @@ type V4ServerConf struct {
 	// 0: disable
 	ICMPTimeout uint32 `yaml:"icmp_timeout_msec"`
 
+	// Custom Options.
+	//
+	// Option with arbitrary hexadecimal data:
+	//     DEC_CODE hex HEX_DATA
+	// where DEC_CODE is a decimal DHCPv4 option code in range [1..255]
+	//
+	// Option with IP data (only 1 IP is supported):
+	//     DEC_CODE ip IP_ADDR
 	Options []string `yaml:"options"`
 
 	ipStart    net.IP        // starting IP address for dynamic leases
